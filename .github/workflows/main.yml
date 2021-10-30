@@ -13,6 +13,6 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: wjfee/wjfee.github.io
         TARGET_BRANCH: master
-        BUILD_SCRIPT: yarn docs:build
+        BUILD_SCRIPT: yarn && yarn docs:build
         BUILD_DIR: designPattern/.vuepress/dist/
         SOURCE_DIR: designPattern/
