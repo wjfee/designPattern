@@ -14,5 +14,6 @@ jobs:
         TARGET_REPO: wjfee/wjfee.github.io
         TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn docs:build
-        BUILD_DIR: docs/.vuepress/dist
-        SOURCE_DIR: designPattern/
+        # BUILD_DIR: docs/.vuepress/dist
+        BUILD_DIR: /github/workspace/public
+        SOURCE_DIR: designPattern disignPattern2

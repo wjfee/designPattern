@@ -30,6 +30,6 @@ module.exports={
       }
     ]
   ],
-  // dest: '../public/designPattern'
-  dest: '.vuepress/dist/designPattern'
+  dest: '../public/designPattern'
+  // dest: '.vuepress/dist/designPattern'
 }
