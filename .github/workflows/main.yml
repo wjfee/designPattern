@@ -16,4 +16,4 @@ jobs:
         BUILD_SCRIPT: yarn && yarn docs:build
         # BUILD_DIR: docs/.vuepress/dist
         BUILD_DIR: /github/workspace/public
-        SOURCE_DIR: designPattern disignPattern2
+        SOURCE_DIR: designPattern designPattern2
