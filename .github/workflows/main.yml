@@ -11,7 +11,8 @@ jobs:
         mkdir public 
         cp -r docsify/* public/
     - name: Build and Deploy
-      uses: wjfee/vuepress-deploy@master
+      # uses: wjfee/vuepress-deploy@master
+      uses: wjfee/vuepress-compiler@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: wjfee/wjfee.github.io
