@@ -20,6 +20,7 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: wjfee/wjfee.github.io
         TARGET_BRANCH: master
+        SOURCE_DIR: public
     # - name: Build and Deploy
     #   # uses: wjfee/vuepress-deploy@master
     #   uses: wjfee/vuepress-compiler@master
