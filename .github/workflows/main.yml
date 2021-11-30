@@ -11,7 +11,7 @@ jobs:
         mkdir public 
         cp -r docsify/* public/
     - name: Build
-      uses: wjftu/vuepress_1.x_compiler
+      uses: wjftu/vuepress_1.x_compiler@master
       env:
         SOURCE_DIR: designPattern designPattern2
     - name: Deploy
