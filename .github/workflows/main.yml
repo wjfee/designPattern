@@ -10,14 +10,24 @@ jobs:
       run: |
         mkdir public 
         cp -r docsify/* public/
-    - name: Build and Deploy
-      # uses: wjfee/vuepress-deploy@master
-      uses: wjfee/vuepress-compiler@master
+    - name: Build
+      uses: wjftu/vuepress_1.x_compiler
+      env:
+        SOURCE_DIR: designPattern designPattern2
+    - name: Deploy
+      uses: wjftu/git_push_action@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: wjfee/wjfee.github.io
         TARGET_BRANCH: master
-        BUILD_SCRIPT: yarn && yarn docs:build
-        # BUILD_DIR: docs/.vuepress/dist
-        BUILD_DIR: /github/workspace/public
-        SOURCE_DIR: designPattern designPattern2
+    # - name: Build and Deploy
+    #   # uses: wjfee/vuepress-deploy@master
+    #   uses: wjfee/vuepress-compiler@master
+    #   env:
+    #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    #     TARGET_REPO: wjfee/wjfee.github.io
+    #     TARGET_BRANCH: master
+    #     BUILD_SCRIPT: yarn && yarn docs:build
+    #     # BUILD_DIR: docs/.vuepress/dist
+    #     BUILD_DIR: /github/workspace/public
+    #     SOURCE_DIR: designPattern designPattern2
