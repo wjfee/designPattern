@@ -11,7 +11,7 @@ jobs:
         mkdir public 
         cp -r docsify/* public/
     - name: Build
-      uses: wjftu/vuepress_1.x_compiler@master
+      uses: wjftu/vuepress_1.x_compiler@fix_GA
       env:
         SOURCE_DIR: designPattern designPattern2
         BUILD_SCRIPT: yarn add -D @vuepress/plugin-google-analytics && yarn docs:build
